@@ -1,0 +1,32 @@
+# Byte-compiled Python files
+*.pyc
+
+# C extensions
+*.so
+
+# Distribution files
+.dist
+build
+develop
+eggs
+lib
+*.egg-info
+
+# PyInstaller files
+*.spec
+*.manifest
+
+# Tests
+tests
+*.log
+
+# Sphinx documentation
+docs/build
+
+# Temporary files
+.cache
+.pytest_cache
+.tox
+
+# macOS files
+.DS_Store
