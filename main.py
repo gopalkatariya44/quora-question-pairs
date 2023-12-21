@@ -1,16 +1,21 @@
-# This is a sample Python script.
+import streamlit as st
+import helper
+import pickle
 
-# Press ⌃F5 to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+model = pickle.load(open('models/model.pkl', 'rb'))
 
+st.header('Duplicate Question Pairs')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+q1 = st.text_input('Enter question 1')
+q2 = st.text_input('Enter question 2')
 
+if st.button('Find'):
+    query = helper.query_point_creator(q1, q2)
+    result = model.predict(query)[0]
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    if result:
+        st.header('Duplicate')
+    else:
+        st.header('Not Duplicate')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# changes
