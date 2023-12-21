@@ -1,5 +1,8 @@
 # quora-question-pairs
 
+<img src="./ss/2.png" height=300 width=450>
+<img src="./ss/1.png" height=300 width=450>
+
 Clone the code
 ```
 git clone https://github.com/gopalkatariya44/quora-question-pairs.git
