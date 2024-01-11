@@ -27,6 +27,6 @@ Run project
 streamlit run main.py
 ```
 
-visit: http://localhost:8501
+After successfully running the code, visit: http://localhost:8501
 
 
