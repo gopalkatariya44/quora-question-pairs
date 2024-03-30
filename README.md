@@ -29,4 +29,6 @@ streamlit run main.py
 
 After successfully running the code, visit: http://localhost:8501
 
+### Link
+["Medium Blog"](https://gopalkatariya.medium.com/navigating-quora-question-pairs-a-step-by-step-guide-to-solving-the-problem-e05e07046d78)
 
